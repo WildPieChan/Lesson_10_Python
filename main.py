@@ -65,7 +65,6 @@ def callback_func(query):
             value = 'error'
     else:
         value += data
-    send_text(data)
 
     if ( value != old_value and value != '' ) or ( '0' != old_value and value == '' ):
         if value == '':
